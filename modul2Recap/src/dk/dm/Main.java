@@ -11,6 +11,8 @@ public class Main {
     public static void main(String[] args) {
         try {
             p = new PrintWriter("test.csv");
+            p.write("testing,3,sejt");
+            p.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
